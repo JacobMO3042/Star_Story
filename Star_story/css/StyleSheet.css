@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+h1{
+    color: antiquewhite;
+}
+header{
+    top: 100px;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0);
+}
+#container{
+    position: relative;
+    width: 200%;
+    height: 100vh;
+}
+
+#background{
+    z-index: 1;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    transform: translateX(0px);
+}
+#background:active{
+    transform: translateX(-100px);
+    transition: transform linear 2s;
+}
